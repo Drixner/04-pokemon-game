@@ -1,6 +1,6 @@
 import { default } from '../../App.vue';
 <template>
-  <h1>Quien ese ese pokemo?</h1>
+  <h1>Quien ese ese pokemon?</h1>
 </template>
 
 <script>
