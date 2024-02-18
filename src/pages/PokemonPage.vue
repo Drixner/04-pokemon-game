@@ -1,8 +1,8 @@
 import { default } from '../../App.vue';
 <template>
-  <h1>Quien ese ese pokemon?</h1>
+  <h1>Quien es ese pokemon?</h1>
   <PokemonPicture :pokemonId="180" :showPokemon="true" />
-  <PokemonOptionsa />
+  <PokemonOptions />
 </template>
 
 <script>
