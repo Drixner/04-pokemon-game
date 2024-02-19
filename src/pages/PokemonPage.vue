@@ -1,8 +1,7 @@
-import { default } from '../../App.vue';
 <template>
   <h1>Quien es ese pokemon?</h1>
   <PokemonPicture :pokemonId="180" :showPokemon="true" />
-  <PokemonOptions :pokemon="pokemomArr" />
+  <PokemonOptions :pokemons="pokemonArr" />
 </template>
 
 <script>
@@ -20,13 +19,13 @@ export default {
   },
   data() {
     return {
-      pokemomArr: [],
+      pokemonArr: [],
     };
   },
   methods: {
     async mixPokemonArray() {
-      this.pokemomArr = await getPokemonOptions();
-      console.log(this.pokemomArr);
+      this.pokemonArr = await getPokemonOptions();
+      console.log(this.pokemonArr);
     },
   },
   mounted() {
